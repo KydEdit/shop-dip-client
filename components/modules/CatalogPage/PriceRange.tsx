@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { $mode } from '@/context/mode'
 import { useStore } from 'effector-react'
 import { Range, getTrackBackground } from 'react-range'
@@ -38,6 +39,7 @@ const PriceRange = ({
           readOnly
         />
       </div>
+      {/* @ts-ignore */}
       <Range
         values={priceRange}
         step={STEP}
